@@ -32,7 +32,7 @@ fig, ax = plt.subplots()
 plt.ylim(0.0, 1.0)
 ax.bar(['Training', 'Test'], [train_acc, test_acc])
 ax.set_ylabel('Accuracy')
-ax.set_title('KNN Classifier Accuracy')
+ax.set_title('Naive Bayesian Classifier Accuracy')
 plt.show()
 
 #Save model to file

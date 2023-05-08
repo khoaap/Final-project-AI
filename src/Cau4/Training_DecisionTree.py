@@ -32,16 +32,16 @@ fig, ax = plt.subplots()
 plt.ylim(0.0, 1.0)
 ax.bar(['Training', 'Test'], [train_acc, test_acc])
 ax.set_ylabel('Accuracy')
-ax.set_title('KNN Classifier Accuracy')
+ax.set_title('Decision Tree Classifier Accuracy')
 plt.show()
 
+
+#Save model to file
+from joblib import dump
+dump(dt, 'Model_DecisionTree.joblib')
 
 # Visualization of decision trees
 from sklearn import tree
 fig, ax = plt.subplots(figsize=(50, 30))
 tree.plot_tree(dt, ax=ax)
 plt.show()
-
-#Save model to file
-from joblib import dump
-dump(dt, 'Model_DesicionTree.joblib')

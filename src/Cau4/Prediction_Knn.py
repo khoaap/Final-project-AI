@@ -23,4 +23,5 @@ knn = load('Model_Knn.joblib')
 
 # Perform prediction on test data
 y_pred = knn.predict(image_list)
+print("Knn: ")
 print("Predictions:", y_pred)

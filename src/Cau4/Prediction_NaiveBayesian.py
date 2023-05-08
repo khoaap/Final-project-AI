@@ -23,4 +23,5 @@ NB = load('Model_NavieBayesian.joblib')
 
 # Perform prediction on test data
 y_pred = NB.predict(image_list)
+print("Naive Bayes: ")
 print("Predictions:", y_pred)
